@@ -21,4 +21,4 @@ echo 如有疑问，请查看README
 set /p a=你的选择:
 if /i "%a%"=="1" call Partitionbackup.bat
 if /i "%a%"=="2" call PartitionBackupAll.bat
-if /i "%a%"=="2" call Partitionrecovery.bat
+if /i "%a%"=="3" call PartitionRecover.bat
