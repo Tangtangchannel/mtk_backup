@@ -1,7 +1,7 @@
 @echo off
 title Home-PartitionBackup
 echo 按回车键开始/Press Enter Start！
-echo #备份/Backup
+echo #恢复/Recocver
 cd mtkclient-1.52
 mkdir Backupfile
 python mtk w nvcfg Backupfile\nvcfg.bin
