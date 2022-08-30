@@ -22,4 +22,5 @@ pause
 echo #配置Mtkclient的运行环境
 title 配置Mtkclient的运行环境
 pip3 install -r mtkclient-1.52/requirements.txt
-python mtkclient-1.52\setup.py
+cd mtkclient-1.52
+python setup.py install
