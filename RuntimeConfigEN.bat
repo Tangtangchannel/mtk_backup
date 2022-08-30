@@ -23,4 +23,4 @@ echo #Configure the operating environment of Mtkclient
 title Configure the operating environment of Mtkclient
 pip3 install -r mtkclient-1.52/requirements.txt
 cd mtkclient-1.52
-python setup.py install
+python setup.py installs
