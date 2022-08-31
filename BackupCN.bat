@@ -12,6 +12,7 @@ cls
 echo 使用本工具会涉及到底层操作，由此带来的风险不承担任何后果！
 echo 如愿意承担责任请按回车进入控制台！否则请关闭程序并删除！
 pause
+:1
 cls
 title 首页：控制台
 echo            -----------------------------首页-------------------------------
@@ -23,3 +24,9 @@ set /p a=你的选择:
 if /i "%a%"=="1" call Partitionbackup.bat
 if /i "%a%"=="2" call PartitionBackupAll.bat
 if /i "%a%"=="3" call PartitionRecover.bat
+if /i "%a%"=="4" call UnlockBootloader.bat
+echo 需要返回控制台吗？
+echo 1.返回 2.退出
+set /p a=你的选择:
+if /i "%a%"=="1" goto :1
+if /i "%a%"=="2" exit
