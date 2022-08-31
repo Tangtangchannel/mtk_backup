@@ -1,11 +1,11 @@
 @echo off
 title Home-PartitionBackup
-echo æŒ‰å›è½¦é”®å¼€å§‹/Press Enter Startï¼
-echo #è§£é”Bootloader/UnlockBootloader
+echo °´»Ø³µ¼ü¿ªÊ¼/Press Enter Start£¡
+echo #½âËøBootloader/UnlockBootloader
 cd mtkclient-1.52
 python mtk da seccfg unlock
-echo å¯èƒ½å·²ç»è§£é”å®Œæˆï¼Œè¯·æŸ¥çœ‹æœ€ç»ˆçŠ¶æ€/May have been unlocked, please check the final status.
-echo å¦‚æ— é™é‡å¯ï¼Œå¯èƒ½æ˜¯éœ€è¦æ‰§è¡Œfastboot oem cdmsï¼ˆè‡ªè¡Œä¸‹è½½fast bootæ‰§è¡Œï¼‰/If restarting infinitely, it may be necessary to execute fastboot oem cdms (download fastboot by yourself and execute)
+echo ¿ÉÄÜÒÑ¾­½âËøÍê³É£¬Çë²é¿´×îÖÕ×´Ì¬/May have been unlocked, please check the final status.
+echo ÈçÎŞÏŞÖØÆô£¬¿ÉÄÜÊÇĞèÒªÖ´ĞĞfastboot oem cdms£¨×ÔĞĞÏÂÔØfast bootÖ´ĞĞ£©/If restarting infinitely, it may be necessary to execute fastboot oem cdms (download fastboot by yourself and execute)
 pause
 cls
 echo OK
