@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+ #!/usr/bin/env python3
 # 脚本 by affggh
 # Apcache 2.0 
 

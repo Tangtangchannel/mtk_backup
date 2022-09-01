@@ -6,7 +6,7 @@ echo 首先需要配置环境！
 echo 按回车键开始
 pause
 echo 解压Mtkclient 如出现选项请按y
-7z x mtkclient-1.52.zip
+7z x mtkclient.zip
 if exist mtkclient-1.52  (
     echo 解压完成，开始配置
 ) else (
@@ -21,8 +21,8 @@ echo 继续执行请按回车
 pause
 echo #配置Mtkclient的运行环境
 title 配置Mtkclient的运行环境
-pip3 install -r mtkclient-1.52\requirements.txt
-cd mtkclient-1.52
+pip3 install -r mtkclient\requirements.txt
+cd mtkclient
 python setup.py install
 pause
 cls

@@ -6,8 +6,8 @@ echo First you need to configure the environment!
 echo Press enter to start!
 pause
 echo Unzip Mtkclient, if there is an option, press y
-7z x mtkclient-1.52.zip
-if exist mtkclient-1.52  (
+7z x mtkclient.zip
+if exist mtkclient  (
     echo Decompression is complete, start configuration
 ) else (
     echo Did you move something? Please don't modify it at will!
@@ -21,6 +21,6 @@ echo To continue, press enter
 pause
 echo #Configure the operating environment of Mtkclient
 title Configure the operating environment of Mtkclient
-pip3 install -r mtkclient-1.52/requirements.txt
-cd mtkclient-1.52
+pip3 install -r mtkclient/requirements.txt
+cd mtkclient
 python setup.py install

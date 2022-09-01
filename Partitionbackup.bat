@@ -2,7 +2,7 @@
 title Home-PartitionBackup
 echo 按回车键开始/Press Enter Start！
 echo #备份/Backup
-cd mtkclient-1.52
+cd mtkclient
 mkdir Backupfile
 python mtk r nvcfg Backupfile\nvcfg.bin
 python mtk r nvdata Backupfile\nvdata.bin
