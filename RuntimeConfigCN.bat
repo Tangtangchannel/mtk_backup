@@ -21,6 +21,8 @@ echo 继续执行请按回车
 pause
 echo #配置Mtkclient的运行环境
 title 配置Mtkclient的运行环境
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip3 install -r mtkclient\requirements.txt
 cd mtkclient
 python setup.py install
