@@ -1,26 +1,26 @@
 @echo off
-title Ê¹ÓÃGPLV3Ğí¿É¿ªÔ´µÄ³ÌĞò£¬Çë×ñÊØLICENSE£¡×÷Õß@¿ÌÇç_officiai£¬ÒıÓÃ¼ûREADME
+title ä½¿ç”¨GPLV3è®¸å¯å¼€æºçš„ç¨‹åºï¼Œè¯·éµå®ˆLICENSEï¼ä½œè€…@åˆ»æ™´_officiaiï¼Œå¼•ç”¨è§README
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
 cd /d "%~dp0"
-echo Ê×ÏÈĞèÒªÅäÖÃ»·¾³£¡
-echo °´»Ø³µ¼ü¿ªÊ¼
+echo é¦–å…ˆéœ€è¦é…ç½®ç¯å¢ƒï¼
+echo æŒ‰å›è½¦é”®å¼€å§‹
 pause
-echo ½âÑ¹Mtkclient Èç³öÏÖÑ¡ÏîÇë°´y
+echo è§£å‹Mtkclient å¦‚å‡ºç°é€‰é¡¹è¯·æŒ‰y
 7z x mtkclient.zip
-if exist mtkclient-1.52  (
-    echo ½âÑ¹Íê³É£¬¿ªÊ¼ÅäÖÃ
+if exist mtkclient  (
+    echo è§£å‹å®Œæˆï¼Œå¼€å§‹é…ç½®
 ) else (
-    echo ÄãÊÇ²»ÊÇ¶¯ÁËÊ²Ã´£¿
+    echo ä½ æ˜¯ä¸æ˜¯åŠ¨äº†ä»€ä¹ˆï¼Ÿ
     pause
-    echo ÔÙ¼û
+    echo å†è§
     exit
 )
-echo ´úÂë¼¼Êõ¹ıÀÃ£¬ÄúÊÇ·ñÒÑ¾­°²×°Python²¢Ìí¼ÓÆäµ½PATHÁË£¿
-echo Äã×îºÃÒÑ¾­°²×°ÁË
-echo ¼ÌĞøÖ´ĞĞÇë°´»Ø³µ
+echo ä»£ç æŠ€æœ¯è¿‡çƒ‚ï¼Œæ‚¨æ˜¯å¦å·²ç»å®‰è£…Pythonå¹¶æ·»åŠ å…¶åˆ°PATHäº†ï¼Ÿ
+echo ä½ æœ€å¥½å·²ç»å®‰è£…äº†
+echo ç»§ç»­æ‰§è¡Œè¯·æŒ‰å›è½¦
 pause
-echo #ÅäÖÃMtkclientµÄÔËĞĞ»·¾³
-title ÅäÖÃMtkclientµÄÔËĞĞ»·¾³
+echo #é…ç½®Mtkclientçš„è¿è¡Œç¯å¢ƒ
+title é…ç½®Mtkclientçš„è¿è¡Œç¯å¢ƒ
 pip3 install -r mtkclient\requirements.txt
 cd mtkclient
 python setup.py install
