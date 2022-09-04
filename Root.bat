@@ -3,6 +3,7 @@ title Home-Root
 echo #Root
 echo Request Permission。。。
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
+cd /d "%~dp0"
 echo 获取权限成功！/Request Permission Finished！
 pause
 :1
@@ -15,19 +16,7 @@ if /i "%a%"=="1" (
     call K40G-Root12.bat
     pause
 )
-else (
-cls
-echo 回去重选！
-pause
-goto :1
-)
 if /i "%a%"=="2" (
     call K40G-Root8.bat
     pause
 )
-else (
-cls
-echo 回去重选！
-pause
-goto :1
-) 
