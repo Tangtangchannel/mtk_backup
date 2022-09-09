@@ -1,23 +1,30 @@
 @echo off
 title Home-Root-K40G1258
 echo #Root
-echo Request PermissionО©╫О©╫О©╫О©╫О©╫О©╫
+echo Request Permission║ё║ё║ё
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
 cd /d "%~dp0"
-echo О©╫О©╫х║х╗О©╫чЁи╧О©╫О©╫О©╫/Request Permission FinishedО©╫О©╫
+echo ╩Ях║х╗очЁи╧╕ё║/Request Permission Finishedё║
 pause
 cls
-echo д©г╟О©╫О©╫О©╫з╡О©╫О©╫т╫в╤нёО©╫О©╫О©╫О©╫в╘О©╫О©╫О©╫п╣О©╫О©╫О©╫О©╫О©╫
+echo д©г╟хттз╡Бйт╫в╤нё╛хГ╠Дв╘╡╩Ёп╣ётПхн
 pause
 cls
-echo О©╫О©╫О©╫ьЁО©╫О©╫О©╫О©╫О©╫й╪
+echo ╟╢╩ьЁ╣╪Э©╙й╪
 pause
 cls
-title О©╫О©╫О©╫О©╫к╒О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫о╣мЁО©╫О©╫О©╫О©╫О©╫ь╥О©╫О©╫О©╫О©╫и║О©╫О©╫О©╫О©╫О©╫_officialО©╫О©╫О©╫А╧╘О©╫О©╫О©╫О©╫О©╫О©╫
-echo О©╫О©╫О©╫О©╫О©╫О©╫й╠О©╫д╪О©╫О©╫пёО©╫О©╫О©╫и╨О©╫О©╫О©╫т╤О©╫и╬О©╫О©╫
-mkdir downloadcache
-echo О©╫О©╫О©╫О©╫aria2cО©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
+title обтьк╒╩З╟Э╣╫дЦ╣до╣мЁё╛обть╥ЧнЯси║╬©лгГ_official║©лА╧╘║ё║ё║ё
+echo #╢╢╫╗аый╠нд╪Ч╪пё╛мЙЁи╨С╩Авт╤╞и╬ЁЩ
+mkdir cache
+echo #╣Всцaria2c╫Ьппобть
 timeout /t 5
 cls
-echo О©╫О©╫я╧ROM
-7z.exe x -o downloadcache downloadcache\12.5.8G.zip
+echo #╫БнЖPayload
+title #╫БнЖPayload
+payload-dumper-go.exe -p boot -o cache payload.bin
+if exist cache\boot.img (
+    echo лАх║мЙЁи
+    echo ╫собю╢╫╚пч╡╧Boot
+) else (
+    echo дЦтз╦ий╡ц╢ё©
+)
