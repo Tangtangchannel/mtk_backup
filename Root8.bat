@@ -1,24 +1,23 @@
 @echo off
 title Home-Root-K40G1258
 echo #Root
-echo Request Permission¡£¡£¡£
+echo Request Permissionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
 cd /d "%~dp0"
-echo »ñÈ¡È¨ÏÞ³É¹¦£¡/Request Permission Finished£¡
+echo ï¿½ï¿½È¡È¨ï¿½Þ³É¹ï¿½ï¿½ï¿½/Request Permission Finishedï¿½ï¿½
 pause
 cls
-echo Ä¿Ç°ÈÔÔÚ²âÊÔ½×¶Î£¬Èç±ä×©²»³Ðµ£ÔðÈÎ
+echo Ä¿Ç°ï¿½ï¿½ï¿½Ú²ï¿½ï¿½Ô½×¶Î£ï¿½ï¿½ï¿½ï¿½×©ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
 pause
 cls
-echo °´»Ø³µ¼ü¿ªÊ¼
+echo ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼
 pause
 cls
-title ÏÂÔØË¢»ú°üµ½ÄãµÄÏµÍ³£¬ÏÂÔØ·þÎñÓÉ¡¾¿ÌÇç_official¡¿Ìá¹©¡£¡£¡£
-echo ´´½¨ÁÙÊ±ÎÄ¼þ¼Ð£¬Íê³Éºó»á×Ô¶¯É¾³ý
+title ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½Ø·ï¿½ï¿½ï¿½ï¿½É¡ï¿½ï¿½ï¿½ï¿½ï¿½_officialï¿½ï¿½ï¿½á¹©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Ä¼ï¿½ï¿½Ð£ï¿½ï¿½ï¿½Éºï¿½ï¿½ï¿½Ô¶ï¿½É¾ï¿½ï¿½
 mkdir downloadcache
-echo µ÷ÓÃaria2c½øÐÐÏÂÔØ
-aria2c.exe -o downloadcache\12.5.8G.zip https://tangtangpan.lm379.cn/d/°¢ÀïÔÆ£¨cn£¬Ö÷Õ¾µã£©/Ð¡Ã×ROM/miui_ARES_V12.5.8.0.RKJCNXM_d866a4bd8b_11.0.zip?pw=ba87d4ed9e8da00d
+echo ï¿½ï¿½ï¿½ï¿½aria2cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 timeout /t 5
 cls
-echo ½âÑ¹ROM
+echo ï¿½ï¿½Ñ¹ROM
 7z.exe x -o downloadcache downloadcache\12.5.8G.zip
