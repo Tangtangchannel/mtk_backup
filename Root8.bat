@@ -29,3 +29,28 @@ if exist cache\boot.img (
 ) else (
     echo 你在干什么？
 )
+echo 修补Boot
+title 修补Boot
+xcopy boot_patch cache
+cd cache
+python dopatch.py --file boot.img
+if exist cache\new_boot.img (
+    echo 修补完成
+    echo 准备刷入！
+) else (
+    echo 看起来出了点问题？
+)
+echo #权限请求
+title #权限请求
+echo 打开你的USB调试后，按回车键。
+pause
+echo 请同意权限请求！
+adb reboot bootloader
+echo 如未进入Bootloader，请手动进入！
+title #刷入
+echo #刷入
+fastboot erase boot_ab
+fastboot flash boot_ab new_boot.img
+fastboot reboot
+echo 开机后，请安装Magisk并检查是否成功！
+echo 即将退出...
