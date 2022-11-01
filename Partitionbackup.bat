@@ -1,6 +1,7 @@
+
 @echo off
 title Home-PartitionBackup
-echo 按回车键开始/Press Enter Start！
+echo 按回车键开始/Press Enter Start??
 echo #备份/Backup
 cd mtkclient
 mkdir Backupfile
