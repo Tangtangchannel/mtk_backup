@@ -100,18 +100,18 @@ def cleanup():
         "magiskpolicy",
         "assets"
     ]
-    print("- Clean Up ...")
+    print("patch结束：退出..")
     for i in rmlist: delete(i)
 
 
 def patch(file):
     if not os.access(args.file, os.F_OK):
-        print("boot 不存在\n")
+        print("error:boot不存在\n")
         return False
     if os.access("." + os.sep + "new-boot.img", os.F_OK):  # Delete exist patched image before patch
         os.remove("." + os.sep + "new-boot.img")
     if not __parseApk():
-        print("Error : Cannot parse apk file...\n")
+        print("Error : 所需文件缺失：\run\magisk-v25.2.apk\n")
         return False
     p = Patch()
 

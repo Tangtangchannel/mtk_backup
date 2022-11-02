@@ -17,7 +17,7 @@ cls
 title 首页：控制台
 echo            -----------------------------首页-------------------------------
 echo 
-echo 1.自动备份关键分区  2.【Beta】完整备份（包括USERDATA）  3.恢复关键分区  4.解锁Bootloader 5.一键Root
+echo 1.自动备份关键分区  2.【Beta】完整备份（包括USERDATA）  3.恢复关键分区  4.解锁Bootloader 5.一键Root 6.进入ADB
 echo
 echo 如有疑问，请查看README
 set /p a=你的选择:
@@ -26,6 +26,7 @@ if /i "%a%"=="2" call PartitionBackupAll.bat
 if /i "%a%"=="3" call PartitionRecover.bat
 if /i "%a%"=="4" call UnlockBootloader.bat
 if /i "%a%"=="5" call Root.bat
+if /i "%a%"=="6" call adb.bat
 echo 需要返回控制台吗？
 echo 1.返回 2.退出
 set /p a=你的选择:
