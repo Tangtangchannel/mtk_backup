@@ -37,6 +37,6 @@ Python需要在系统的环境变量PATH内。
 
 打开Backup.bat，开始使用吧！
 
-[example\backup.png](example\backup.png)
+[](https://github.com/Tangtangchannel/mtk_backup/blob/main/example/backup.png)
 
 3.有BUG可以提lssues给我
