@@ -17,7 +17,7 @@ cls
 title 首页：控制台
 echo            -----------------------------首页-------------------------------
 echo 
-echo 1.自动备份关键分区  2.【Beta】完整备份（包括USERDATA）  3.恢复关键分区  4.解锁Bootloader 5.一键Root 6.进入ADB
+echo 1.自动备份关键分区  2.【Beta】完整备份（包括USERDATA）  3.恢复关键分区  4.解锁Bootloader 5.一键Root 6.进入ADB 7.打开图形界面版Mtkclient
 echo
 echo 如有疑问，请查看README
 set /p a=你的选择:
