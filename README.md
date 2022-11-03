@@ -31,7 +31,7 @@ Python需要在系统的环境变量PATH内。
 
 1.运行<u>RuntimeConfigCN.bat</u>,配置你的使用环境，按照脚本提示操作。
 
-如配置正确为以下提示[(example\runtimeconfig.png](example\runtimeconfig.png)
+如配置正确为以下提示![](https://github.com/Tangtangchannel/mtk_backup/blob/main/example/runtimeconfig.png)
 
 2.使用
 
