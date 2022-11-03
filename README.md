@@ -31,12 +31,12 @@ Python需要在系统的环境变量PATH内。
 
 1.运行<u>RuntimeConfigCN.bat</u>,配置你的使用环境，按照脚本提示操作。
 
-如配置正确为以下提示[](example\runtimeconfig.png)
+如配置正确为以下提示[(example\runtimeconfig.png](example\runtimeconfig.png)
 
 2.使用
 
 打开Backup.bat，开始使用吧！
 
-[](example\backup.png)
+[example\backup.png](example\backup.png)
 
 3.有BUG可以提lssues给我
