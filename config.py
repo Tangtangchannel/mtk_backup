@@ -1,21 +1,26 @@
-import platform
+﻿import platform
 import sys
 import distro
 import pkg_resources
+
 
 def get_linux_distribution():
     distribution_name = distro.name()
     return distribution_name if distribution_name else "Unknown"
 
+
 def get_kernel_version():
     return platform.uname().release
+
 
 def get_python_version():
     return sys.version.split()[0]
 
+
 def get_installed_packages_count():
     installed_packages = [pkg.key for pkg in pkg_resources.working_set]
     return len(installed_packages)
+
 
 def get_system_info():
     print("hello!")
@@ -42,5 +47,6 @@ def get_system_info():
     print("当前Python版本：", python_version)
     print("已经安装的pip软件包：", get_installed_packages_count())
 
-# 调用函数获取系统信息
+
+# 执行封装之后的代码⭐
 get_system_info()
