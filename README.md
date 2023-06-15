@@ -2,6 +2,11 @@
 
 用于备份和恢复设备关键分区的程序（适用于使用MTK处理器的MIUI设备）
 
+
+## ！本项目将在近日进行大规模更新，旧的源码即将下线！
+
+
+
 ### 致谢
 [MoorCorPa](https://github.com/MoorCorPa)
 
