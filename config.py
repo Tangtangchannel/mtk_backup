@@ -30,7 +30,7 @@ def get_system_info():
     system = platform.system()
     if system == "Windows":
         # 获取Windows版本
-        windows_version = platform.win32_ver()[0]
+        windows_version = platform.release()[0]
         print("当前Windows版本：","Windows" , windows_version)
     elif system == "Linux":
         # 获取发行版信息
