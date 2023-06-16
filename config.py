@@ -36,10 +36,8 @@ def clone_repository(repo_url):
         return False
 
 
-def download_file(url):
+def download_file(url, save_directory):
     file_name = url.split("/")[-1]
-    save_directory = os.path.join(script_directory, "tmp")
-    os.makedirs(save_directory, exist_ok=True)  # 创建tmp文件夹
     save_path = os.path.join(save_directory, file_name)
     try:
         urllib.request.urlretrieve(url, save_path)
@@ -52,7 +50,7 @@ def download_file(url):
 
 print("hello!")
 
-print("在第一次运行此程序时，我们需要进行一些pip包的安装！并且检查您的系统依赖")
+print("在第一次运行此程序时，我们需要进行一些软件-包的安装！并且检查您的系统依赖")
 
 # 判断操作系统类型
 system = platform.system()
@@ -79,14 +77,17 @@ while True:
     user_choice = input("请输入您的选择（1. git拉取最新代码，2. 使用国内下载服务，q. 退出）：")
 
     if user_choice == "1":
-        git_url = "https://github.com/Tangtangchannel/mtk_backup.git"
+        git_url = 'https://github.com/Tangtangchannel/mtk_backup.git'
         if clone_repository(git_url):
             break
     elif user_choice == "2":
-        file_url = "https://www.tangspace.cn/tracker/trackercn.txt"
-        if download_file(file_url):
+        file_url = 'https://www.tangspace.cn/tracker/trackercn.txt'
+        save_directory = os.path.join(script_directory, "tmp")
+        os.makedirs(save_directory, exist_ok=True)  # 创建tmp文件夹
+        if download_file(file_url, save_directory):
             break
     elif user_choice.lower() == "q":
         break
 
 print("程序已退出！")
+exit(0)
