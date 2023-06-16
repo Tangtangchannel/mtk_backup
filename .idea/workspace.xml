@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b0b3ee4-be59-4b8d-aad0-2ee2b8f04609" name="变更" comment="变更">
-      <change afterPath="$PROJECT_DIR$/go-check/check.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mtk_backup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mtk_backup.iml" afterDir="false" />
+    <list default="true" id="3b0b3ee4-be59-4b8d-aad0-2ee2b8f04609" name="变更" comment="code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/boot_patch/boot_patch.py" beforeDir="false" afterPath="$PROJECT_DIR$/boot_patch/boot_patch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +143,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686829323488</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="变更">
+      <created>1686882596273</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686882596273</updated>
+    </task>
+    <task id="LOCAL-00010" summary="code">
+      <created>1686896518051</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686896518051</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -165,6 +176,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="变更" />
-    <option name="LAST_COMMIT_MESSAGE" value="变更" />
+    <MESSAGE value="code" />
+    <option name="LAST_COMMIT_MESSAGE" value="code" />
   </component>
 </project>
