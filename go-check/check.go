@@ -1,11 +1,17 @@
 package main
 
 import (
+	"bufio"
+	"embed"
 	"fmt"
+	"io/ioutil"
 	"os"
 	"os/exec"
 	"strings"
 )
+
+//go:embed kami.mp4
+var embeddedFile embed.FS
 
 func main() {
 	currentDir, err := os.Getwd()
@@ -52,6 +58,46 @@ func main() {
 		}
 	}
 
-	fmt.Println("按回车键退出程序。")
-	fmt.Scanln()
+	fmt.Println("按回车键退出程序，或输入'kami'执行命令。")
+	reader := bufio.NewReader(os.Stdin)
+	input, _ := reader.ReadString('\n')
+	input = strings.TrimSpace(input)
+
+	if input == "kami" {
+		destPath := "/tmp/kami.mp4"
+
+		err := writeFileFromEmbeddedFile("kami.mp4", destPath)
+		if err != nil {
+			fmt.Printf("\033[31m无法写入文件：%v\033[0m\n", err)
+			return
+		}
+
+        cmd := exec.Command("konsole", "-e", "termplay", destPath)
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+
+		fmt.Println("执行命令：konsole -e termplay", destPath)
+		err = cmd.Run()
+		if err != nil {
+			fmt.Printf("\033[31m执行命令失败：%v\033[0m\n", err)
+		} else {
+			fmt.Println("命令执行成功。")
+		}
+	}
+
+	fmt.Println("程序已退出。")
+}
+
+func writeFileFromEmbeddedFile(resourceName, destPath string) error {
+	fileData, err := embeddedFile.ReadFile(resourceName)
+	if err != nil {
+		return err
+	}
+
+	err = ioutil.WriteFile(destPath, fileData, 0644)
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
