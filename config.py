@@ -42,6 +42,10 @@ def download_file(url, save_directory):
     try:
         urllib.request.urlretrieve(url, save_path)
         print("文件下载完成！")
+        # 创建 dwfinish 文件
+        dwfinish_file = os.path.join(script_directory, "dwfinish")
+        with open(dwfinish_file, 'w') as f:
+            f.write("文件下载完成")
         return True
     except urllib.error.URLError:
         print("文件下载失败！")
@@ -61,11 +65,19 @@ script_directory = os.path.dirname(os.path.abspath(__file__))
 if system == "Windows":
     windows_version = platform.win32_ver()[0]
     print("当前Windows版本：", windows_version)
+    # 创建 env_win 文件
+    env_file = os.path.join(script_directory, "env_win")
+    with open(env_file, 'w') as f:
+        f.write("Windows环境")
 elif system == "Linux":
     current_distribution = get_linux_distribution()
     print("当前发行版：", current_distribution)
     kernel_version = get_kernel_version()
     print("当前内核版本：", kernel_version)
+    # 创建 env_tux 文件
+    env_file = os.path.join(script_directory, "env_tux")
+    with open(env_file, 'w') as f:
+        f.write("Linux环境")
 else:
     print("未知操作系统")
 
@@ -73,21 +85,26 @@ python_version = get_python_version()
 print("当前Python版本：", python_version)
 print("已经安装的pip软件包：", get_installed_packages_count())
 
-while True:
-    user_choice = input("请输入您的选择（1. git拉取最新代码，2. 使用国内下载服务，q. 退出）：")
+dwfinish_file = os.path.join(script_directory, "dwfinish")
 
-    if user_choice == "1":
-        git_url = 'https://github.com/Tangtangchannel/mtk_backup.git'
-        if clone_repository(git_url):
+# 判断是否存在 dwfinish 文件
+if os.path.exists(dwfinish_file):
+    print("检测到 dwfinish 文件，跳过下载步骤")
+else:
+    while True:
+        user_choice = input("请输入您的选择（1. git拉取最新代码，2. 使用国内下载服务，q. 退出）：")
+
+        if user_choice == "1":
+            git_url = 'https://github.com/Tangtangchannel/mtk_backup.git'
+            if clone_repository(git_url):
+                break
+        elif user_choice == "2":
+            file_url = 'https://www.tangspace.cn/tracker/trackercn.txt'
+            save_directory = os.path.join(script_directory, "tmp")
+            os.makedirs(save_directory, exist_ok=True)  # 创建tmp文件夹
+            if download_file(file_url, save_directory):
+                break
+        elif user_choice.lower() == "q":
             break
-    elif user_choice == "2":
-        file_url = 'https://www.tangspace.cn/tracker/trackercn.txt'
-        save_directory = os.path.join(script_directory, "tmp")
-        os.makedirs(save_directory, exist_ok=True)  # 创建tmp文件夹
-        if download_file(file_url, save_directory):
-            break
-    elif user_choice.lower() == "q":
-        break
 
 print("程序已退出！")
-exit(0)
