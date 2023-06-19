@@ -110,6 +110,29 @@ def fuc_windows_conf():
     clear_screen()
     print("您的OS为" + platform.system() + ",您需要补全依赖项。")
     print(tangtang)
+    print("")
+    print("您可以准备部署了！")
+    print("请选择安装选项：")
+    print("1.正常安装 \t 2.卸载 \t 3.musicroom")
+
+    while True:
+        choice = input("请输入您的选择：")
+        if choice == '1':
+            show_warning_window('咋回事呢？', '你确定你要安装吗？请准备好科学上网连接，否则有可能无法安装依赖项。\n是否继续操作？')
+            # 执行正常安装的代码
+            break
+        elif choice == '2':
+            show_warning_window('咋回事呢？', '卸载ですか？真的要卸载吗？\n是否狠心操作？')
+            # 执行卸载的代码
+            break
+        elif choice == '3':
+            # 执行musicroom相关代码
+            break
+        elif choice.lower() == 'q':
+            print('程序已退出。')
+            exit(0)
+        else:
+            print('输入错误，请重新输入。')
 
 
 def show_warning_window(title, message):
