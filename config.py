@@ -9,6 +9,7 @@ import urllib.request
 from pyfiglet import Figlet
 import subprocess
 
+
 f = Figlet(font='slant')
 tangtang = f.renderText('New-Mtkclient')
 
@@ -110,19 +111,23 @@ def fuc_windows_conf():
     clear_screen()
     print("您的OS为" + platform.system() + ",您需要补全依赖项。")
     print(tangtang)
+    print("from:\t\t\t tangtang")
     print("")
     print("您可以准备部署了！")
     print("请选择安装选项：")
     print("1.正常安装 \t 2.卸载 \t 3.musicroom")
+    #最后的最后
+
+
 
     while True:
         choice = input("请输入您的选择：")
         if choice == '1':
-            show_warning_window('咋回事呢？', '你确定你要安装吗？请准备好科学上网连接，否则有可能无法安装依赖项。\n是否继续操作？')
+            show_warning_window('很关心这件事', '你确定你要安装吗？请准备好科学上网连接，否则有可能无法安装mtkclient的依赖项。\n是否继续操作？')
             # 执行正常安装的代码
             break
         elif choice == '2':
-            show_warning_window('咋回事呢？', '卸载ですか？真的要卸载吗？\n是否狠心操作？')
+            show_warning_window('不解的选择？', '卸载ですか？真的要卸载吗？\n是否狠心操作？')
             # 执行卸载的代码
             break
         elif choice == '3':
@@ -146,7 +151,7 @@ def show_warning_window(title, message):
     if reply == QMessageBox.Yes:
         print('用户选择了继续操作。')
     else:
-        QMessageBox.information(window, '取消操作', '您已经取消安装，程序即将退出。')
+        QMessageBox.information(window, '取消操作', '您已经取消安装，程序即将退出\n\n雑魚雑魚！')
         exit(1)
 
     return app
@@ -154,7 +159,7 @@ def show_warning_window(title, message):
 
 print("hello!")
 
-print("在第一次运行此程序时，我们需要进行一些软件包的安装！并且检查您的系统依赖")
+print("在第一次运行此程序时，我们需要进行一些软件包的安装！并且检查您的系统依赖项")
 
 # 判断操作系统类型
 system = platform.system()
@@ -223,3 +228,5 @@ elif os.path.exists(env_tux_file):
     suki_satouchan_tux()
 else:
     print("error:未知的环境")
+
+

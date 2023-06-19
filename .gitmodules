@@ -1,0 +1,3 @@
+[submodule "payload_dumper_go-cn"]
+	path = payload_dumper_go-cn
+	url = https://github.com/Tangtangchannel/payload_dumper_go-cn
