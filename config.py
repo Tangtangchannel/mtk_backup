@@ -81,10 +81,10 @@ def suki_satouchan_tux():
     clear_screen()
     print("您的OS为" + platform.system() + ",您需要补全依赖项。")
     print(tangtang)
-    print("")
+    print("\t \t \t \t \t \t  from:tangtang")
     print("您可以准备部署了！")
     print("请选择安装选项：")
-    print("1.正常安装 \t 2.卸载 \t 3.musicroom")
+    print("1.正常安装 \t 2.卸载 \t 3.musicroom \t 4.贡献者/使用项目与开源许可")
 
     while True:
         choice = input("请输入您的选择：")
@@ -98,6 +98,9 @@ def suki_satouchan_tux():
             break
         elif choice == '3':
             # 执行musicroom相关代码
+            break
+        elif choice == '4':
+            # 打印感谢者
             break
         elif choice.lower() == 'q':
             print('程序已退出。')
@@ -123,22 +126,24 @@ def fuc_windows_conf():
     while True:
         choice = input("请输入您的选择：")
         if choice == '1':
-            show_warning_window('很关心这件事', '你确定你要安装吗？请准备好科学上网连接，否则有可能无法安装mtkclient的依赖项。\n是否继续操作？')
+            show_warning_window('咋回事呢？', '你确定你要安装吗？请准备好科学上网连接，否则有可能无法安装依赖项。\n是否继续操作？')
             # 执行正常安装的代码
             break
         elif choice == '2':
-            show_warning_window('不解的选择？', '卸载ですか？真的要卸载吗？\n是否狠心操作？')
+            show_warning_window('咋回事呢？', '卸载ですか？真的要卸载吗？\n是否狠心操作？')
             # 执行卸载的代码
             break
         elif choice == '3':
             # 执行musicroom相关代码
+            break
+        elif choice == '4':
+            # 打印感谢者
             break
         elif choice.lower() == 'q':
             print('程序已退出。')
             exit(0)
         else:
             print('输入错误，请重新输入。')
-
 
 def show_warning_window(title, message):
     app = QApplication(sys.argv)
@@ -149,7 +154,7 @@ def show_warning_window(title, message):
     reply = QMessageBox.warning(window, title, message,
                                 QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
     if reply == QMessageBox.Yes:
-        print('用户选择了继续操作。')
+        print('继续操作。')
     else:
         QMessageBox.information(window, '取消操作', '您已经取消安装，程序即将退出\n\n雑魚雑魚！')
         exit(1)
