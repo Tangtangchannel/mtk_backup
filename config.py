@@ -1,5 +1,5 @@
 ﻿import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox
+from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox ,QVBoxLayout, QLabel ,QSizePolicy
 import platform
 import sys
 import distro
@@ -138,6 +138,7 @@ def fuc_windows_conf():
             break
         elif choice == '4':
             # 打印感谢者
+
             break
         elif choice.lower() == 'q':
             print('程序已退出。')
@@ -160,6 +161,7 @@ def show_warning_window(title, message):
         exit(1)
 
     return app
+
 
 
 print("hello!")
