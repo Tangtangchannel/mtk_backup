@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b0b3ee4-be59-4b8d-aad0-2ee2b8f04609" name="变更" comment="code">
+    <list default="true" id="3b0b3ee4-be59-4b8d-aad0-2ee2b8f04609" name="小修小补" comment="Merge remote-tracking branch 'origin/new-mtkbackup' into new-mtkbackup">
+      <change afterPath="$PROJECT_DIR$/hy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +29,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,15 +42,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "new-mtkbackup",
-    "last_opened_file_path": "/home/tangtang/Project/Mtkbackup",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;new-mtkbackup&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/tangtang/Project/Mtkbackup&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.obiscr.chatgpt.settings.GPT3-3.5-Turbo&quot;,
+    &quot;zielu.gittoolbox.prj.config.selected.tab.id&quot;: &quot;zielu.gittoolbox.config.shared.autoFetch&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="mtk_backup" is-module-sdk="true">
@@ -55,7 +60,12 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/go-check" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.config">
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" singleton="false" nameIsGenerated="true">
       <module name="mtk_backup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,6 +87,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Docker 镜像" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="ubuntu:20.04" />
+          <option name="containerName" value="test_c" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Docker 镜像" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -157,7 +187,63 @@
       <option name="project" value="LOCAL" />
       <updated>1686896518051</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="增加状态检测！">
+      <created>1686910524578</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686910524578</updated>
+    </task>
+    <task id="LOCAL-00012" summary="增加状态检测！">
+      <created>1686979638617</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686979638617</updated>
+    </task>
+    <task id="LOCAL-00013" summary="留下占位符！">
+      <created>1686981980547</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686981980547</updated>
+    </task>
+    <task id="LOCAL-00014" summary="留下占位符！">
+      <created>1687132954686</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1687132954686</updated>
+    </task>
+    <task id="LOCAL-00015" summary="新增窗口支持与安装程序">
+      <created>1687135778397</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687135778397</updated>
+    </task>
+    <task id="LOCAL-00016" summary="新增窗口支持与安装程序">
+      <created>1687137517933</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687137517933</updated>
+    </task>
+    <task id="LOCAL-00017" summary="添加Payload_dumper">
+      <created>1687143100759</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687143100759</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Merge remote-tracking branch 'origin/new-mtkbackup' into new-mtkbackup">
+      <created>1687241037466</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1687241037466</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -177,6 +263,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="变更" />
     <MESSAGE value="code" />
-    <option name="LAST_COMMIT_MESSAGE" value="code" />
+    <MESSAGE value="增加状态检测！" />
+    <MESSAGE value="留下占位符！" />
+    <MESSAGE value="新增窗口支持与安装程序" />
+    <MESSAGE value="添加Payload_dumper" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/new-mtkbackup' into new-mtkbackup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/new-mtkbackup' into new-mtkbackup" />
   </component>
 </project>
